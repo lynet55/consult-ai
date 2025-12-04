@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  consult-ai-server:
+    build:
+      context: ./consult-ai-server
+      dockerfile: Dockerfile
+    container_name: consult-ai-server
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./consult-ai-server:/app
+    restart: unless-stopped
+

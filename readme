@@ -1,0 +1,67 @@
+# Consult AI
+
+A FastAPI-based consultant management system with a modern client interface.
+
+## 📋 Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- **Git** (with SSH configured for cloning)
+- **Docker** and **Docker Compose**
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+This project uses git submodules, so make sure to clone recursively:
+
+```bash
+git clone --recursive git@github.com:lynet55/consult-ai.git
+cd consult-ai
+```
+
+### 2. Start the Application
+
+Build and run all services using Docker Compose:
+
+```bash
+docker-compose up --build
+```
+
+### 3. Access the Application
+
+Once running, the API server will be available at:
+
+- **API Base URL:** http://localhost:8000
+- **API Documentation:** http://localhost:8000/docs
+- **API Redoc:** http://localhost:8000/redoc
+
+## 🛠️ Development
+
+### Stop the Application
+
+```bash
+docker-compose down
+```
+
+### Rebuild After Changes
+
+```bash
+docker-compose up --build
+```
+
+## 📁 Project Structure
+
+```
+consult-ai/
+├── consult-ai-server/    # FastAPI backend server
+├── consult-ai-client/    # Frontend client
+└── docker-compose.yaml   # Docker orchestration
+```
+
+## 📚 API Endpoints
+
+- `GET /konsulenter` - Get all consultants
+- `GET /konsulenter/{id}` - Get consultant by ID
+
+For full API documentation, visit http://localhost:8000/docs when the server is running.
