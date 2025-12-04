@@ -12,3 +12,16 @@ services:
       - ./consult-ai-server:/app
     restart: unless-stopped
 
+  consult-ai-client:
+    build:
+      context: ./consult-ai-client
+      dockerfile: Dockerfile
+    container_name: consult-ai-client
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./consult-ai-client:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+      - SECRET_KEY=test-secret-key-client-12345
+    restart: unless-stopped
