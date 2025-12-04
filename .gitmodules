@@ -1,0 +1,3 @@
+[submodule "consult-ai-client"]
+	path = consult-ai-client
+	url = git@github.com:lynet55/consult-ai-client.git
