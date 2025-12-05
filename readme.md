@@ -24,6 +24,8 @@ cd consult-ai
 
 Build and run all services using Docker Compose:
 
+- add your secret key to the docker-compose file
+
 ```bash
 docker-compose up --build
 ```
