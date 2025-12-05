@@ -2,7 +2,7 @@
 	path = consult-ai-client
 	url = git@github.com:lynet55/consult-ai-client.git
 [submodule "consultant-ai-ui/consult-ai-server"]
-	path = consultant-ai-ui/consult-ai-server
+	path = consult-ai-server
 	url = git@github.com:lynet55/consult-ai-server.git
 [submodule "consult-ai-ui"]
 	path = consult-ai-ui
