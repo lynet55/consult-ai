@@ -23,6 +23,7 @@ services:
       - ./consult-ai-client:/app
     environment:
       - PYTHONUNBUFFERED=1
-      - OPEN_ROUTER_API_KEY=test-secret-key-client-12345
-      - URL=http://localhost:8000
+      # - OPEN_ROUTER_API_KEY=test-secret-key-client-12345
+      - MCP_SERVER_URL=http://consult-ai-server:8000
+      - OPEN_ROUTER_API_KEY=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
     restart: unless-stopped
