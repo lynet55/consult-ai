@@ -62,6 +62,5 @@ consult-ai/
 ## 📚 API Endpoints
 
 - `GET /konsulenter` - Get all consultants
-- `GET /konsulenter/{id}` - Get consultant by ID
 
 For full API documentation, visit http://localhost:8000/docs when the server is running.
